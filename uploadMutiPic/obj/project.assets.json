@@ -13265,11 +13265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\uploadMutiPic\\uploadMutiPic\\uploadMutiPic.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\uploadMutiPic\\uploadMutiPic\\uploadMutiPic.csproj",
       "projectName": "uploadMutiPic",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\uploadMutiPic\\uploadMutiPic\\uploadMutiPic.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\uploadMutiPic\\uploadMutiPic\\uploadMutiPic.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\uploadMutiPic\\uploadMutiPic\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\uploadMutiPic\\uploadMutiPic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

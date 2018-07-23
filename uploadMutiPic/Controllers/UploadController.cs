@@ -45,31 +45,44 @@ namespace uploadMutiPic.Controllers
                     string folderName = "Upload";
                     string webRootPath = _hostingEnvironment.WebRootPath;
                     string newPath = Path.Combine(webRootPath, folderName);
-                    if (!Directory.Exists(newPath))
+                    string now = DateTime.Now.ToString("yyyyMMddHHmmss");
+                    string subFinder = Path.Combine(newPath, now);
+                    if (!Directory.Exists(subFinder))
                     {
-                        Directory.CreateDirectory(newPath);
+                        Directory.CreateDirectory(subFinder);
                     }
+
                     foreach (IFormFile item in files)
                     {
+                        
                         if (item.Length > 0)
                         {
-                            string fileName = ContentDispositionHeaderValue.Parse(item.ContentDisposition).FileName.Trim('"');
-                            string fullPath = Path.Combine(newPath, fileName);
-                            using (var stream = new FileStream(fullPath, FileMode.Create))
+                            if (item.Length>5*1024*1024)
+                            //3mb = 3*1024
                             {
-                                item.CopyTo(stream);
+                                ModelState.AddModelError("","You can't upload file more then 5MB");
+                                return View();
                             }
+
+                            var extension = item.FileName.Substring(item.FileName.LastIndexOf("."), item.FileName.Length - item.FileName.LastIndexOf("."));
+                            extension = extension.ToLower();
+                            string[] fileType = { ".png", ".jpg", ".jpeg" };
+                            if (!fileType.Contains(extension))
+                            {
+                                ModelState.AddModelError("", "You can only upload image files");
+                                return View();
+                            }
+                            string fileName = ContentDispositionHeaderValue.Parse(item.ContentDisposition).FileName.Trim('"');
+                                string fullPath = Path.Combine(subFinder, fileName);
+                                using (var stream = new FileStream(fullPath, FileMode.Create))
+                                {
+                                    item.CopyTo(stream);
+                                }
                         }
+                        
+
                     }
                     return this.Content("Success");
-                }
-                if (files == null)
-                {
-                    return this.Content("null");
-                }
-                if (files.Count == 0)
-                {
-                    return this.Content("count 0");
                 }
                 else
                 {
@@ -78,5 +91,7 @@ namespace uploadMutiPic.Controllers
             }
             return View();
         }
+
+
     }
 }
