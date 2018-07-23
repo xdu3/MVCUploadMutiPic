@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\bin\Debug\netcoreapp2.0\uploadMutiPic.deps.json
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\bin\Debug\netcoreapp2.0\uploadMutiPic.runtimeconfig.json
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\bin\Debug\netcoreapp2.0\uploadMutiPic.runtimeconfig.dev.json
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\bin\Debug\netcoreapp2.0\uploadMutiPic.dll
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\bin\Debug\netcoreapp2.0\uploadMutiPic.pdb
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.csprojAssemblyReference.cache
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.dll
+C:\Users\Administrator\source\repos\uploadMutiPic\uploadMutiPic\obj\Debug\netcoreapp2.0\uploadMutiPic.pdb
