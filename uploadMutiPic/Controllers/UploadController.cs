@@ -51,7 +51,11 @@ namespace uploadMutiPic.Controllers
                     {
                         Directory.CreateDirectory(subFinder);
                     }
-
+                    if (files.Count > 5)
+                    {
+                        ModelState.AddModelError("", "You can't upload more then 5 files");
+                        return View();
+                    }
                     foreach (IFormFile item in files)
                     {
                         
